@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LeadScout: results dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,650;12..96,750&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/theme.css">
+  <link rel="stylesheet" href="/static/css/dashboard.css">
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <div id="app" hidden>
+    <header class="topbar">
+      <div class="brand"><strong>LeadScout</strong><span class="muted" id="subtitle">Results</span></div>
+      <nav class="nav">
+        <a href="/review">Review</a>
+        <a href="/dashboard" aria-current="page">Dashboard</a>
+        <a href="/flowchart">Flowcharts</a>
+      </nav>
+    </header>
+    <main class="page">
+      <div class="banner" id="banner" hidden>
+        <strong>No evaluation results yet.</strong>
+        Run <code>python -m eval.run_eval --judge</code> to measure LeadScout on the demo companies. Numbers show dashes until then.
+      </div>
+      <section class="hero panel">
+        <div class="hero-main">
+          <p class="muted">Facts verified against their source</p>
+          <div class="hero-number num" id="heroRate">–</div>
+          <p class="hero-sub num" id="heroSub">Run the evaluation to measure</p>
+        </div>
+        <div class="hero-strip">
+          <div class="strip-head"><h3>Every company in the evaluation</h3>
+            <span class="legend"><i class="sq pass"></i>draft ready <i class="sq warnc"></i>needs a look <i class="sq neutral"></i>not a fit <i class="sq fail"></i>failed</span></div>
+          <div id="strip" class="strip"></div>
+        </div>
+      </section>
+      <section class="ledger panel num" id="ledger"></section>
+      <section class="grid2">
+        <div class="panel"><h2>Average fit score by segment</h2><p class="muted small">Out of 10, from the segment's rubric.</p><div id="segBars" class="bars"></div></div>
+        <div class="panel"><h2>Time per lead</h2><p class="muted small">Website reading, news search, three model calls and checks.</p><div id="latency"></div></div>
+      </section>
+      <section class="panel">
+        <div class="row-head"><h2>Per company</h2><span class="muted small" id="runMeta"></span></div>
+        <div class="table-wrap"><table id="table"></table></div>
+      </section>
+      <section class="panel">
+        <div class="row-head">
+          <h2>How it works</h2>
+          <div class="tabs" role="tablist">
+            <button class="tab" role="tab" data-view="pipeline" aria-selected="true">Pipeline</button>
+            <button class="tab" role="tab" data-view="n8n" aria-selected="false">n8n workflow</button>
+            <button class="tab" role="tab" data-view="trace" aria-selected="false">Latest lead</button>
+          </div>
+        </div>
+        <p class="muted small">Generated automatically from the code, the n8n workflow file and the run logs.</p>
+        <div id="flow" class="flow"></div>
+      </section>
+      <section class="panel">
+        <h2>Live pipeline</h2>
+        <p class="muted small">From leads processed on this server (review page, n8n or command line), not the evaluation.</p>
+        <div class="ledger inner num" id="liveLedger"></div>
+        <div class="grid2 tight">
+          <div><h3>Leads by status</h3><div id="statusBars" class="bars"></div></div>
+          <div><h3>Integrations</h3><div id="integrations" class="bars"></div></div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div id="thumb" class="thumb" hidden>
+    <div class="t-top">
+      <div><div class="t-title">LeadScout</div><div class="t-tag">AI lead research and outreach automation</div></div>
+      <div class="t-model" id="tModel"></div>
+    </div>
+    <div class="t-hero">
+      <div><div class="t-number num" id="tRate">–</div><div class="t-caption" id="tCaption">of extracted facts verified against their source</div></div>
+      <div class="t-kpis num" id="tKpis"></div>
+    </div>
+    <div class="t-body">
+      <div class="t-chart"><div class="t-label">Average fit score by segment</div><div id="tBars" class="bars big"></div>
+        <div class="t-label" style="margin-top:34px">Outcome per company</div><div id="tOutcome" class="bars big"></div></div>
+      <div class="t-side"><div class="t-label">Every company researched</div><div id="tStrip" class="strip big"></div>
+        <div class="t-label" style="margin-top:34px">Guardrails enforced in code</div><ul class="t-guards" id="tGuards"></ul></div>
+    </div>
+    <div class="t-flow" id="tFlow"></div>
+    <div class="t-watermark" id="tWatermark" hidden>Preview: run the evaluation to fill in real results</div>
+  </div>
+  <script src="/static/js/dashboard.js"></script>
+</body>
+</html>

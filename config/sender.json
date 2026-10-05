@@ -1,0 +1,17 @@
+{
+  "name": "Sanjeet",
+  "company": "Vedang Analytics",
+  "offer": "I build AI agents and automations that take repetitive work off small teams.",
+  "capabilities": [
+    "AI customer support agents that answer routine questions and hand edge cases to the team",
+    "lead research and outreach automation",
+    "document processing: turning PDFs, invoices and forms into structured data",
+    "automated reporting and dashboards"
+  ],
+  "proof_points": [
+    "I recently built an AI customer support agent that passed 24 of 24 test conversations with zero policy violations, at about $0.006 per conversation."
+  ],
+  "call_to_action": "Would a 15-minute call to explore this be worthwhile?",
+  "opt_out": "If this isn't relevant, just reply \"no\" and I won't follow up.",
+  "signature": "Sanjeet\nVedang Analytics\nvedanganalytics.com"
+}

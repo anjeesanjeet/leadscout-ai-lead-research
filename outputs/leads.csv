@@ -1,0 +1,27 @@
+﻿lead_id,company,website,segment,status,fit_score,why_they_fit,verified_facts,draft_subject,draft_body,cost_usd,updated_at
+1,Allbirds,allbirds.com,d2c_ecommerce,needs_review,8.0,"Allbirds offers products online with free ground shipping on orders over $100 (F5) and provides customer support via email (F8), confirming direct-to-consumer online sales.; Evidence of shipping policy (free ground shipping on orders over $100, F5) and a support email address (F8) exist, but no mention of help center, FAQ, live chat, or returns policy is provided in the facts.; Clear growth signals include strategic partnership with renewables expert in 2014 (F3), best-selling product launch in 2016 (F4), and new product innovation with 100% waterproof wool sneakers launched in September 2025 (F7).; Company offers shoes and apparel (F1) with various natural material options (F6), and continues to expand with new products (F7). However, the facts don't provide specific evidence of a 'sizable or varied' catalog with many products, variants, or bundles.; Founded in 2007 (F2) as a passion project by Tim Brown with a later partnership with Joey Zwillinger (F3), Allbirds appears to be a mid-sized specialized brand rather than a global giant with large enterprise infrastructure.","Allbirds specializes in shoes made with natural materials like merino wool and eucalyptus. | The company was founded in 2007 by Tim Brown as a passion project. | Allbirds partnered with renewables expert Joey Zwillinger in 2014 to revolutionize the shoe industry. | The Wool Runner was introduced in 2016 and became an instant best-seller. | Allbirds offers free ground shipping on orders over $100. | Allbirds replaced petroleum-based synthetics with natural alternatives including wool, tree fiber, and sugarcane. | Allbirds launched its first 100% waterproof wool sneakers in September 2025. | Customer support is available via help@allbirds.com.",AI customer support for Allbirds,"Hi Allbirds team,
+
+I saw you launched 100% waterproof wool sneakers in September 2025—expanding into new categories fast. As you scale, customer support volume likely grows with it. I build AI agents that handle repetitive inquiries (returns, shipping questions, product details) at scale. One recent agent handled 24 test conversations with zero policy violations at $0.006 per conversation.
+
+This could free your team from routine tickets and let them focus on complex issues. A 15-minute call might show if it's worth exploring for your support needs.
+
+Would you be open to that?
+
+Sanjeet
+Vedang Analytics
+vedanganalytics.com
+
+If this isn't relevant, just reply ""no"" and I won't follow up.",0.0293,2026-10-05T11:37:21+00:00
+2,Brooklinen,brooklinen.com,d2c_ecommerce,ready_for_review,8.0,"Fact F1 explicitly states Brooklinen sells bedding and home essentials 'directly to consumers online.' The company description confirms they operate as a D2C e-commerce brand.; Multiple growth signals are evident: F3 shows a relaunch of the Washed European Linen collection in 2025, F4 shows relaunched Midweight Plush Towels with new technology in February 2025, F5 shows a new Airweave Cotton collection launch in March 2025, and F8 indicates 2022 plans to triple retail presence with nine-figure revenue.; The company description indicates Brooklinen sells 'sheets, comforters, pillows, and towels' - a sizable and varied catalog of premium home essentials. The verified facts also reference multiple distinct collections (Washed European Linen, Midweight Plush Towels, Airweave Cotton).; Brooklinen appears to be a mid-sized brand rather than a global giant. Founded in 2014 by a husband and wife (F1), it has strong customer validation with 175,000+ five-star reviews (F2) and 40+ awards (F6). F7 shows founder-led leadership transitions typical of growth-stage companies. F8's 2022 plans to reach 'nine figures' revenue suggests mid-sized scale. No evidence of large in-house AI teams typical of global giants.","Brooklinen was founded in 2014 by a husband and wife to offer premium bedding without luxury markups | The company has over 175,000 five-star reviews | Brooklinen relaunched its Washed European Linen Bedding collection in 2025 | In February 2025, Brooklinen relaunched Midweight Plush Towels with an innovative spinning technique | Brooklinen launched a new Airweave Cotton collection made from Turkish cotton in March 2025 | Brooklinen products have won 40+ awards | Co-founder Rich Fulop stepped down as CEO with an interim internal CEO taking over | In 2022 Brooklinen announced plans to triple its retail presence with revenue well into nine figures",AI agents for Brooklinen's customer support,"Hi Brooklinen team,
+
+You're handling over 175,000 five-star reviews and managing multiple product launches this year—including the new Airweave Cotton collection and relaunched Midweight Plush Towels. That's a lot of customer conversations happening across channels.
+
+I build AI customer support agents that handle repetitive inquiries at scale. I recently built one that passed 24 of 24 test conversations with zero policy violations, at about $0.006 per conversation. For a brand managing growth like yours, this frees up your team to focus on complex issues and customer relationships.
+
+Would a 15-minute call to explore how this could work for Brooklinen be worthwhile?
+
+Sanjeet
+Vedang Analytics
+vedanganalytics.com
+
+If this isn't relevant, just reply ""no"" and I won't follow up.",0.0255,2026-10-05T11:47:21+00:00

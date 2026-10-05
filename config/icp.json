@@ -1,0 +1,95 @@
+{
+  "capped_max_score": 5,
+  "segments": {
+    "d2c_ecommerce": {
+      "label": "D2C / e-commerce brand",
+      "criteria": [
+        {
+          "id": "sells_online",
+          "weight": 3,
+          "question": "Does the company sell its own products directly to consumers online?"
+        },
+        {
+          "id": "support_load",
+          "weight": 2,
+          "question": "Is there evidence of customer support load, such as a help center, FAQ, returns or shipping policy, live chat, or support hiring?"
+        },
+        {
+          "id": "growth",
+          "weight": 2,
+          "question": "Are there growth signals, such as new products or markets, hiring, funding or expansion?"
+        },
+        {
+          "id": "catalog",
+          "weight": 2,
+          "question": "Does it sell a sizable or varied catalog (many products, variants or bundles)?"
+        },
+        {
+          "id": "size_fit",
+          "weight": 1,
+          "question": "Is it a small or mid-sized brand rather than a global giant with large in-house AI teams?"
+        }
+      ]
+    },
+    "b2b_saas": {
+      "label": "B2B SaaS company",
+      "criteria": [
+        {
+          "id": "sells_software",
+          "weight": 3,
+          "question": "Does the company sell software to businesses?"
+        },
+        {
+          "id": "support_load",
+          "weight": 2,
+          "question": "Is there evidence of customer support or onboarding load, such as help docs, a support center or customer success roles?"
+        },
+        {
+          "id": "growth",
+          "weight": 2,
+          "question": "Are there growth signals, such as hiring, funding, new products or new markets?"
+        },
+        {
+          "id": "automation_fit",
+          "weight": 2,
+          "question": "Does it run workflows AI could automate, such as onboarding, support, sales operations or data entry?"
+        },
+        {
+          "id": "size_fit",
+          "weight": 1,
+          "question": "Is it a startup or mid-sized company rather than a global giant with large in-house AI teams?"
+        }
+      ]
+    },
+    "agency": {
+      "label": "Marketing / creative / development agency",
+      "criteria": [
+        {
+          "id": "client_services",
+          "weight": 3,
+          "question": "Does the company provide marketing, creative or development services to clients?"
+        },
+        {
+          "id": "client_volume",
+          "weight": 2,
+          "question": "Is there evidence of many clients, such as case studies, client logos or testimonials?"
+        },
+        {
+          "id": "repetitive_work",
+          "weight": 2,
+          "question": "Does it deliver repeatable work AI could speed up, such as reporting, content production, SEO or lead generation?"
+        },
+        {
+          "id": "growth",
+          "weight": 2,
+          "question": "Are there growth signals, such as hiring, new services or new offices?"
+        },
+        {
+          "id": "size_fit",
+          "weight": 1,
+          "question": "Is it a small or mid-sized agency rather than a global holding-company network?"
+        }
+      ]
+    }
+  }
+}
