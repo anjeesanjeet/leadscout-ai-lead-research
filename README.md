@@ -2,7 +2,7 @@
 
 An n8n and Python automation that researches companies from their public websites and news, scores how well each one fits an ideal-customer profile, and drafts a personalized outreach email from verified facts only. Results go to HubSpot and Google Sheets, and a human approves every email before it is sent.
 
-![LeadScout results](https://raw.githubusercontent.com/anjeesanjeet/leadscout-ai-lead-research/main/outputs/thumbnail.png)
+![LeadScout results](https://github.com/anjeesanjeet/Lead-Scout/blob/main/outputs/thumbnail.png)
 
 ## The problem
 
